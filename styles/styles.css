@@ -1,0 +1,124 @@
+html {
+    /* 1rem = 10px */
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.6rem;
+  }
+
+img {
+    max-width: 100%;
+  }
+
+  h1, h2, h3 {
+      margin: 0;
+  }
+
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --light-green: #76D7C4;
+    --font-lg: 2.8rem;
+    --med-green: #45B39D;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+  .header {
+      background-image: url(../images/pexels-pixabay-434337.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      height: 40rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .header-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+        background-color: rgba(0, 0, 0, 0.4);
+    height: 20rem;
+    align-items: center;
+    color: var(--white);
+    width: 100%;
+}
+
+.header-content h1 {
+    text-align: center;
+}
+
+.navbar {
+    background-color: var(--light-green);
+    display: flex;
+    justify-content: space-between;    
+}
+.navbar a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: var(--font-lg);
+    padding: 1rem 0.5rem;
+    transition: all ease-in-out 0.5s;
+}
+.navbar a:hover {
+    background-color: var(--med-green);
+    font-size: 3.2rem;
+}
+
+.aboutme {
+    background-image: url(../images/pexels-tirachard-kumtanom-733857.jpg);
+    background-size: cover;    
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+    
+}
+
+.aboutme-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border-radius: 8px;
+    color: var(--white);
+}
+
+.aboutme-content h2 {
+    text-align: center;
+}
+
+.tech-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.tech-content p {
+    text-align: center;
+}
+
+.tech-content div:last-child {
+    grid-column: 2/3;
+}
+
+.tech-content figure img{
+    width: 200px;
+    height: 200px;
+}
+

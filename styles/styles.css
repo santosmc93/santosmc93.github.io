@@ -57,12 +57,16 @@ img {
 
 .header-content h1 {
     text-align: center;
+    font-size: 3.8rem;
+    margin-bottom: 2rem;
 }
 
 .navbar {
     background-color: var(--light-green);
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;   
+    height: 8rem; 
+    align-items: center;
 }
 .navbar a {
     text-decoration: none;
@@ -73,7 +77,7 @@ img {
 }
 .navbar a:hover {
     background-color: var(--med-green);
-    font-size: 3.2rem;
+    font-size: 6rem;
 }
 
 .aboutme {
@@ -83,8 +87,7 @@ img {
     background-position: center center;
     height: 40rem;
     display: flex;
-    align-items: center;
-    
+    align-items: center;   
 }
 
 .aboutme-content {
@@ -104,6 +107,13 @@ img {
     text-align: center;
 }
 
+.tech h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin: 2rem 0;
+}
+
 .tech-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -117,8 +127,23 @@ img {
     grid-column: 2/3;
 }
 
+.tech-content p {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
 .tech-content figure img{
     width: 200px;
     height: 200px;
+    margin: 0 auto;
+    display: block;
+    transition: all ease-in-out 0.5s;
 }
+
+.tech-content figure img:hover{
+    width: 250px;
+    height: 250px;
+}
+
+
 

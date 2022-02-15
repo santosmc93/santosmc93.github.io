@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500;700;900&display=swap" rel="stylesheet"> 
@@ -12,28 +13,45 @@
     <title>Portafolio</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="header-content">
             <h1 class="header-title">Carlos Santos</h1>
             <h2 class="header-description">Desarrollador Fullstack || Ingeniero Mecatronico</h2>
         </div> 
     </header>
-    <nav class="navbar">
-        <a href="/">Sobre mi</a>
-        <a href="/">Tecnologias</a>
-        <a href="/">Educacion</a>
-        <a href="/">Proyectos</a>
-        <a href="/">Contactame</a>
+    <nav class="navbar">  
+        <button class="nav-toggle"><i class="fa-solid fa-bars fa-2xl"></i></button>
+        <div class="navbar-links"> 
+            <a href="#aboutme">Sobre mi</a>
+            <a href="#tech">Tecnologias</a>
+            <a href="#education">Educacion</a>
+            <a href="#projects">Proyectos</a>
+            <a href="#contact">Contactame</a>
+        </div>  
+    </nav>
+    <nav class="navbar-mobile">  
+        <div class="navbar-links-mobile"> 
+            <button class="nav-toggle" id="button_close"><i class="fa-solid fa-bars fa-2xl"></i></button>
+            <div class="links-mobile">
+                <a href="#aboutme">Sobre mi</a>
+                <a href="#tech">Tecnologias</a>
+                <a href="#education">Educacion</a>
+                <a href="#projects">Proyectos</a>
+                <a href="#contact">Contactame</a>
+            </div>
+        </div>  
     </nav>
     <main>
-        <section class="aboutme">
+        <section class="aboutme" id="aboutme">
             <div class="aboutme-content">
                 <h2>Sobre mi</h2>
-                <p>Soy Desarrollador de Software especializado en el desarrollo web con conocimientos tanto en tecnologías en la parte del Frontend como en la parte del Backend. Termine mi carrera universitaria en el año 2019 como Ingeniero Mecatronico donde el campo de estudio que mas me llamo la atención y en la que busco desempeñarme es en el área de sistemas y Programación. Me considero una persona de rápido aprendizaje ya que en los ambientes laborales me es fácil acoplarme al ritmo de trabajo y tecnologías que se puedan utilizar ademas de saber trabajar en equipo, esta habilidad la he aprendido a lo largo de los años con experiencias laborales y desarrollo de proyectos.</p>
+                <p>Soy Desarrollador de Software especializado en el desarrollo web con conocimientos tanto en tecnologías en la parte del Frontend como en la parte del Backend. Termine mi carrera universitaria en el año 2019 como Ingeniero Mecatronico donde el campo de estudio que más me llamo la atención y en la que busco desempeñarme es en el área de sistemas y Programación. Me considero una persona de rápido aprendizaje, ya que en los ambientes laborales me es fácil acoplarme al ritmo de trabajo y tecnologías que se puedan utilizar además de saber trabajar en equipo, esta habilidad la he aprendido a lo largo de los años con experiencias laborales y desarrollo de proyectos.</p>
             </div> 
         </section>
-        <section class="tech">
-            <h2>Tecnologias</h2>
+        <section class="tech" id="tech">
+            <div class="titles">
+                <h2>Tecnologias</h2>
+            </div>
             <div class="tech-content">
                 <div>
                     <figure>
@@ -93,39 +111,60 @@
                     <figure>
                         <img src="./svg/mysql-6.svg" alt="Logo" class="tech-logo">                    
                     </figure>
-                    <p>mySQL</p>
+                    <p>MySQL</p>
                 </div>
             </div> 
         </section>
-        <section>
-            <h2>Educacion</h2>
-            <div>
-                <h3>Desarrollo Web Fullstack<span> || </span>Generation Mexico</h3>
-                <p>Bootcamp especializado en el área de desarrollo web para crear egresados desarrolladores fullstack. Se aprenden tecnologías de Frontend como HTML CSS y JavaScript, ademas en la parte del Backend con Java como lenguaje de programación y Spring como framewoork, ademas de bases de datos relacionales como MySQL</p>
+        <section class="educacion" id="education">
+            <div class="titles">
+                <h2>Educacion</h2>
             </div>
-            <div>
-                <h3>Ingeniero Mecatronico<span> || </span>CETI Colomos</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam reiciendis repellendus exercitationem at nulla nostrum aut. Possimus voluptates iure quam! Nihil unde aspernatur alias. Quam veritatis architecto incidunt recusandae dolore.</p>
+            <div class="educacion-container">
+                <div class="educacion-content">
+                    <div class="educacion-card educacion-generation">
+                        <h3>Desarrollo Web Fullstack<span> || </span>Generation Mexico</h3>
+                        <p>Bootcamp especializado en el área de desarrollo web para crear egresados desarrolladores fullstack. Se aprenden tecnologías de Frontend como HTML CSS y JavaScript, ademas en la parte del Backend con Java como lenguaje de programación y Spring como framewoork, ademas de bases de datos relacionales como MySQL</p>
+                    </div>
+                    <div class="educacion-card educacion-engineer">
+                        <h3>Ingeniero Mecatronico<span> || </span>CETI Colomos</h3>
+                        <p>Como ingeniero mecatrónico tuve conocimientos diversos en áreas como mecánica, electrónica, control y software. Pude terminar mi carrera universitaria con practicas profesionales en la industria automotriz y un proyecto final de automatización que fue ganador del primer lugar del evento INGETEC 2019 celebrado en la misma universidad.</p>
+                    </div>
+                </div> 
             </div>
         </section>
-        <section>
-            <h2>Proyectos</h2>
-            <div>
-                <h3>Paw2Go</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, voluptatum earum voluptatibus doloremque, modi vitae corporis, odio quae reprehenderit illum architecto nesciunt. Expedita voluptatibus placeat est ab eum, quibusdam magnam.lore Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti accusamus repellendus, velit reprehenderit, eius dolor quam fuga distinctio et non totam, magnam ad! Expedita voluptatibus accusamus, ullam eveniet totam nobis.</p>
+        <section id="projects">
+            <div class="titles">
+                <h2>Proyectos</h2>
+            </div>
+            <div class="project-container">
+                <div class="project-content">
+                    <h3>Paw2Go</h3>
+                    <p>Como proyecto final del Bootcamp de desarrollo de software web que más recientemente he concluido, se construyo una aplicación e-commerce llamada Paw2go Se trabajó desde el diseño, maquetación y programación de la parte del cliente y del servidor. Por la parte del Frontend utilizamos tecnologías como HTML para el contenido de la página, CSS y Bootstrap para la decoración y hacer más atractiva visualmente nuestra página, JavaScript para añadirle interactividad con los usuarios y por la parte del Backend, se utilizó el lenguaje de programación Java y con la ayuda de Spring Framework se realizó la APIRest para la comunicación entre nuestra página web y una base de datos construida con MySQL donde se guarda la información de nuestros productos.</p>
+                    <a href="https://github.com/santosmc93/Paw2Go" target="_blank">Repositorio Git-hub</a>
+                </div>
+                <figure class="porject-logo">
+                    <img src="./images/icono paw2go.png" alt="icono paw2go">
+                </figure>
             </div>
         </section>
-        <section>
-            <h3>Contactame</h3>
-            <div>
-                <a href="/">Correo</a>
-                <a href="/">Git-hub</a>
-                <a href="/">LinkedIn</a>
+        <section id="contact">
+            <div class="titles">
+                <h2>Contactame</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-card">
+                    <a href="https://github.com/santosmc93" target="_blank"><img src="./svg/github-icon-1.svg" alt="link github"></a>
+                </div>  
+                <div class="contact-card">
+                    <a href="https://linkedin.com/in/carlos-santos-morales" target="_blank"><img src="./svg/linkedin-icon-2.svg" alt="link linedin"></a>
+                </div>
             </div>
         </section>
     </main>
-    <footer>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At ratione nisi alias quos ut, fugiat deserunt fuga tempora obcaecati minus. Nostrum eos officiis reiciendis alias doloribus repudiandae expedita cum commodi.</p>
+    <footer class="footer">
+        <p><a href="#header">Volver al inicio</a></p>
     </footer>
+    <script src="https://kit.fontawesome.com/4c1263e1fc.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
